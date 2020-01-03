@@ -19,7 +19,7 @@ import {HttpClientModule} from "@angular/common/http";
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [], // Insert AppComponent here for local development
+  bootstrap: [AppComponent], // Insert  here for local development
 })
 export class AppModule {
   constructor(injector: Injector) {
