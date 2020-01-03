@@ -4,6 +4,7 @@ import {createCustomElement} from '@angular/elements';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -14,10 +15,11 @@ import {AppComponent} from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [],
+  bootstrap: [], // Insert AppComponent here for local development
 })
 export class AppModule {
   constructor(injector: Injector) {
